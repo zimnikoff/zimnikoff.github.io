@@ -17,4 +17,17 @@ $(function() {
 	 	body.toggleClass('body-menu-active');
 	 });
 
+	 
+	 $(window).resize(function(){
+	 	
+	 	$('.instruction__item').height('auto');
+	 	$('.principles__wrapper').height('auto');
+
+	 	$('.instruction__item').equalHeights();
+		$('.principles__wrapper').equalHeights();
+
+		$('.mainlogo_container').css({ height: window.innerHeight - 60});
+	 });
+
+
 });
