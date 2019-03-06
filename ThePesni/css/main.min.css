@@ -855,11 +855,19 @@ section {
   height: 22px;
 }
 
-#song-body {
-  height: 100vh;
-  background: url("../img/song/song-bg.png");
+.fixed-crossbrowser-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../img/song/song-bg.png");
+  opacity: 1;
+  z-index: -1;
 }
 
 .song-container {
@@ -1155,21 +1163,20 @@ section {
   }
   .m-menu__icons {
     margin-top: 0px;
+    color: #16928a;
   }
   .m-menu__icons a {
+    color: #16928a;
     font-size: 30px;
     margin: 0 10px;
   }
   .m-menu__phone {
     margin-top: 10px;
     font-size: 18px;
+    color: #16928a;
   }
   .main-logo {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    width: 100%;
-    max-width: 560px;
+    top: 20%;
   }
 }
 
@@ -1257,11 +1264,10 @@ section {
 @media only screen and (max-width: 480px) {
   /**/
   .header {
-    height: 100vh;
     background: url("../img/main/header-bg-mobile.png");
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: 40%;
+  }
+  .fixed-crossbrowser-background {
+    background-image: url("../img/song/song-bg-mobile.png");
   }
   .form-subscribe button {
     text-align: center;
@@ -1293,9 +1299,6 @@ section {
   }
   .bottom__wrapper .bottom__logo {
     margin-bottom: 20px;
-  }
-  #blog .sidebar {
-    width: 300px;
   }
   #blog .blog_main .title {
     font-size: 30px;

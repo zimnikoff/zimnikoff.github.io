@@ -44,5 +44,9 @@ $(function() {
 	    $('.header').css({ height: window.innerHeight});
 	});
 
+	if (navigator.platform == 'iPhone'){
+		$('.main-logo').css({ top: '40%'});	
+	}
+
 
 });
