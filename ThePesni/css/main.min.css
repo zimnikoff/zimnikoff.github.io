@@ -215,6 +215,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  overflow-y: scroll;
   right: 0;
   top: 0;
   background-color: #f3f3f3;
@@ -296,6 +297,10 @@ section {
   font-weight: bold;
 }
 
+.m-menu__logo {
+  width: 140px;
+}
+
 .body-menu-active {
   max-height: 100%;
   overflow: hidden;
@@ -331,8 +336,8 @@ section {
 }
 
 .header__top_logo {
-  margin-top: 18px;
-  height: 23px;
+  margin-top: 14px;
+  height: 33px;
 }
 
 .menu {
@@ -360,6 +365,12 @@ section {
 
 .menu__item a:hover {
   text-decoration: underline;
+}
+
+.menu-button img {
+  cursor: pointer;
+  height: 40px;
+  margin-top: -4px;
 }
 
 .mainlogo_container {
@@ -814,6 +825,7 @@ section {
           justify-content: space-between;
   padding: 16px 0;
   border-bottom: 1px solid #073e3a;
+  white-space: nowrap;
 }
 
 .bottom__wrapper .copyright {
@@ -1133,6 +1145,34 @@ section {
   font-size: 14px;
 }
 
+@media only screen and (max-height: 530px) {
+  .m-menu__menu {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .m-menu__menu li {
+    margin: 25px 0;
+  }
+  .m-menu__icons {
+    margin-top: 0px;
+  }
+  .m-menu__icons a {
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  .m-menu__phone {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .main-logo {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 100%;
+    max-width: 560px;
+  }
+}
+
 @media only screen and (max-width: 895px) {
   .principles__icon {
     min-width: 20%;
@@ -1141,10 +1181,6 @@ section {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-height: 711px) and (min-width: 700px) and (orientation: landscape) {
-  /**/
-}
-
 @media only screen and (max-height: 711px) {
   .header__contacts .icons {
     font-size: 25px;
@@ -1199,18 +1235,6 @@ section {
     margin-top: 15px;
     width: 230px;
   }
-  .bottom__wrapper .contacts .phone {
-    font-size: 15px;
-  }
-  .bottom__wrapper .contacts .email {
-    font-size: 12px;
-  }
-  .bottom__wrapper .copyright {
-    font-size: 14px;
-  }
-  .bottom__wrapper .bottom__logo {
-    width: 100px;
-  }
   #blog .wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1232,6 +1256,13 @@ section {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /**/
+  .header {
+    height: 100vh;
+    background: url("../img/main/header-bg-mobile.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: 40%;
+  }
   .form-subscribe button {
     text-align: center;
     margin-top: 15px;
@@ -1262,20 +1293,6 @@ section {
   }
   .bottom__wrapper .bottom__logo {
     margin-bottom: 20px;
-  }
-  .bottom__wrapper .contacts .phone {
-    font-size: 24px;
-  }
-  .bottom__wrapper .contacts .email {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  .bottom__wrapper .copyright {
-    font-size: 12px;
-  }
-  .bottom__wrapper .bottom__logo {
-    margin-top: 20px;
-    width: auto;
   }
   #blog .sidebar {
     width: 300px;
