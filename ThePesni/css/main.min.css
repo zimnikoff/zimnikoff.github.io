@@ -102,11 +102,11 @@ body {
 }
 
 a {
-  color: white;
+  color: #e9232d;
 }
 
 a:active, a:visited {
-  color: white;
+  color: #e9232d;
 }
 
 /*.container
@@ -404,6 +404,7 @@ section {
 }
 
 .header__contacts .icons a {
+  color: white;
   margin-left: 8px;
 }
 
@@ -857,6 +858,7 @@ section {
 
 .fixed-crossbrowser-background {
   position: fixed;
+  display: none;
   height: 100%;
   width: 100%;
   top: 0;
@@ -884,6 +886,7 @@ section {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  background-color: gray;
 }
 
 .song-left {
@@ -1136,6 +1139,7 @@ section {
 }
 
 .blog_main .sidebar-wrapper .sidebar-contact::after {
+  overflow: hidden;
   content: "";
   display: block;
   height: 1px;
@@ -1265,6 +1269,9 @@ section {
   /**/
   .header {
     background: url("../img/main/header-bg-mobile.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: 40%;
   }
   .fixed-crossbrowser-background {
     background-image: url("../img/song/song-bg-mobile.png");
@@ -1302,6 +1309,30 @@ section {
   }
   #blog .blog_main .title {
     font-size: 30px;
+  }
+  .blog_main .post {
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+  .blog_main .post-bottom {
+    padding: 20px;
+    padding-bottom: 56px;
+  }
+  .blog_main .date {
+    padding-bottom: 20px;
+  }
+  .blog_main .cover {
+    height: 250px;
+  }
+  .blog_main .wrapper {
+    padding: 10px 10px;
+    padding-top: 30px;
+  }
+  .blog_main .sidebar-wrapper .sidebar {
+    padding: 20px;
+  }
+  .blog_main .sidebar-wrapper .sidebar-section {
+    padding-bottom: 52px;
   }
 }
 
