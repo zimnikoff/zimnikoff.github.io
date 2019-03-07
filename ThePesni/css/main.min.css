@@ -102,11 +102,11 @@ body {
 }
 
 a {
-  color: #e9232d;
+  color: inherit;
 }
 
 a:active, a:visited {
-  color: #e9232d;
+  color: inherit;
 }
 
 /*.container
@@ -404,7 +404,6 @@ section {
 }
 
 .header__contacts .icons a {
-  color: white;
   margin-left: 8px;
 }
 
@@ -858,7 +857,6 @@ section {
 
 .fixed-crossbrowser-background {
   position: fixed;
-  display: none;
   height: 100%;
   width: 100%;
   top: 0;
@@ -870,6 +868,24 @@ section {
   background-image: url("../img/song/song-bg.png");
   opacity: 1;
   z-index: -1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.fixed-crossbrowser-background:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  opacity: .01;
+  background-color: #000;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
 }
 
 .song-container {
@@ -886,7 +902,6 @@ section {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background-color: gray;
 }
 
 .song-left {
@@ -1272,9 +1287,6 @@ section {
     -webkit-background-size: cover;
             background-size: cover;
     background-position: 40%;
-  }
-  .fixed-crossbrowser-background {
-    background-image: url("../img/song/song-bg-mobile.png");
   }
   .form-subscribe button {
     text-align: center;
