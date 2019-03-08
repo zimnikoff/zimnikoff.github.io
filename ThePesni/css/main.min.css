@@ -857,6 +857,7 @@ section {
 
 #song-body {
   position: relative;
+  overflow: hidden;
 }
 
 #song-body::before {
@@ -871,6 +872,11 @@ section {
   width: 100%;
   will-change: transform;
   z-index: -1;
+}
+
+.song_main {
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .song-container {
