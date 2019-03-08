@@ -878,9 +878,14 @@ section {
   z-index: -1;
 }
 
-.song-scrollbar-wrapper {
-  overflow-y: auto;
+.song_main {
   height: 100vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
@@ -944,10 +949,6 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.song-text {
-  padding-bottom: 40px;
 }
 
 .song-text .text {
