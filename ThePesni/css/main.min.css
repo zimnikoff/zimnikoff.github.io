@@ -856,9 +856,14 @@ section {
 }
 
 #song-body {
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   overflow: hidden;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 #song-body::before {
@@ -878,6 +883,8 @@ section {
 .song_main {
   overflow-y: scroll;
   height: 100vh;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .song-container {
@@ -928,6 +935,10 @@ section {
 
 .song-left .form-button {
   margin-top: 14px;
+}
+
+.song-left .cover {
+  max-width: 100%;
 }
 
 .song-text .text {
