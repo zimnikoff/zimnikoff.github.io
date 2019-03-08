@@ -855,37 +855,22 @@ section {
   height: 22px;
 }
 
-.fixed-crossbrowser-background {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-image: url("../img/song/song-bg.png");
-  opacity: 1;
-  z-index: -1;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
+#song-body {
+  position: relative;
 }
 
-.fixed-crossbrowser-background:before {
+#song-body::before {
+  background: url("../img/song/song-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  content: ' ';
+  height: 100%;
+  left: 0;
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: "";
-  opacity: .01;
-  background-color: #000;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  width: 100%;
   will-change: transform;
+  z-index: -1;
 }
 
 .song-container {
