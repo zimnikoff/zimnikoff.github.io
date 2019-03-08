@@ -856,11 +856,7 @@ section {
 }
 
 #song-body {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  position: relative;
   overflow: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
