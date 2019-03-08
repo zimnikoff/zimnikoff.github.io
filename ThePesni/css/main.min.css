@@ -890,6 +890,13 @@ section {
   -webkit-overflow-scrolling: touch;
 }
 
+.song_header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .song-container {
   display: -webkit-box;
   display: -webkit-flex;
