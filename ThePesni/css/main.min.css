@@ -858,6 +858,7 @@ section {
 #song-body {
   position: relative;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #song-body::before {
