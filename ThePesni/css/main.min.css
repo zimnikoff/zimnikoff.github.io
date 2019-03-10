@@ -333,6 +333,7 @@ section {
   height: 60px;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  will-change: transform;
 }
 
 .header__top_logo {
@@ -856,7 +857,7 @@ section {
 }
 
 #song-body {
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   top: 0;
@@ -878,23 +879,13 @@ section {
   z-index: -1;
 }
 
-.song_main {
+.song-scrollbar-wrapper {
+  overflow-y: scroll;
   height: 100vh;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
-
-.song_header__top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  margin-right: -17px;
+  will-change: transform;
 }
 
 .song-container {
@@ -956,6 +947,10 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.song-text {
+  padding-bottom: 40px;
 }
 
 .song-text .text {
