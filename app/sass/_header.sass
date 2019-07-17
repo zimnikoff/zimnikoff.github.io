@@ -1,0 +1,158 @@
+#index
+	.header
+		height: 800px
+		min-height: 97vh
+		background: url("../img/header/bg.jpg") 0 60px no-repeat
+		background-size: cover
+		mask: url("../img/mask-bottom.png") repeat-x, linear-gradient(to top, transparent 5px, black 5px, black 100%)
+		mask-position: bottom
+		position: relative
+		.top
+			height: 108px
+			background: url("../img/header/top-bg.png")
+			position: relative
+			&::before
+				display: block
+				content: ''
+				position: absolute
+				height: 5px
+				width: 100%
+				bottom: -5px
+				background: url("../img/header/top-bg.png")
+				mask: url("../img/mask-bottom.png") repeat
+			.content
+				display: flex
+				align-items: flex-start
+				.logo
+					width: 208px
+					height: 236px
+					filter: drop-shadow(0px 0px 10px rgba(#000, 0.2))
+				.info
+					font-family: "Rex", sans-serif
+					font-weight: bold
+					padding-top: 22px
+					padding-left: 34px
+					display: flex
+					flex-grow: 1
+					justify-content: space-between
+					line-height: 1
+					&__header
+						color: #83624d
+						font-size: 17px
+						margin-bottom: 2px
+					&__text
+						color: #ffeadd
+						font-size: 23px
+						margin-bottom: 7px
+					&__small
+						color: #ffeadd
+						font-size: 17px
+
+#index
+	.header
+		.descr
+			position: absolute
+			font-family: "Rex", sans-serif
+			line-height: 1
+			transform-origin: 0 0
+			transform: rotate(-8deg)
+			margin-left: -28px
+			margin-top: 280px
+			left: 0
+			h1
+				display: block
+				font-size: 31px
+				color: #c99575
+				text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.15)
+				background: #4f4334
+				position: absolute
+				line-height: 44px
+				padding-right: 18px
+				left: 0
+				width: 282px
+				text-align: right
+				margin: 0
+				z-index: 2
+			h2
+				display: block
+				font-size: 121px
+				color: #ffeadd
+				text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.15)
+				background: #9c723d
+				position: absolute
+				line-height: 114px
+				padding: 3px 0
+				padding-right: 21px
+				left: 0
+				width: 523px
+				text-align: right
+				margin: 0
+				z-index: 1
+				margin-top: 39px
+			.advantages
+				display: block
+				font-size: 25px
+				color: #c99575
+				text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.15)
+				background: #4f4334
+				position: absolute
+				line-height: 1.25
+				padding: 7px
+				padding-left: 41px
+				left: 116px
+				width: 400px
+				text-indent: -32px
+				margin: 0
+				z-index: 2
+				margin-top: 153px
+
+#index
+	.header
+		.register
+			display: block
+			width: 324px
+			height: 72px
+			color: #362612
+			background: #b08a5a
+			font-family: "Rex", sans-serif
+			text-decoration: none
+			font-size: 24px
+			position: absolute
+			text-align: center
+			left: calc(50% - 162px)
+			bottom: 0
+			margin-bottom: 100px
+			padding: 6px
+			&:hover
+				background: darken(#b08a5a, 5%)
+				text-decoration: underline
+			.box
+				border: 2px solid #47341b
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				&::after
+					display: block
+					content: ''
+					width: 23px
+					height: 23px
+					background: url("../img/icons/scissors.svg")
+					background-size: cover
+					transform: rotate(180deg)
+					margin: 18px
+				&::before
+					display: block
+					content: ''
+					width: 23px
+					height: 23px
+					background: url("../img/icons/scissors.svg")
+					background-size: cover
+					margin: 18px
+
+
+			
+
+
+
+		

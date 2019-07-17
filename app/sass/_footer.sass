@@ -1,0 +1,59 @@
+.footer
+		.top
+			background: url("../img/header/top-bg.png")
+			position: relative
+			padding-top: 55px
+			padding-bottom: 35px
+			&::after
+				display: block
+				content: ''
+				position: absolute
+				height: 5px
+				width: 100%
+				top: -5px
+				background: url("../img/header/top-bg.png")
+				mask: url("../img/mask-top.png") repeat
+			.logo
+				width: 179px
+				height: 204px
+			.content
+				display: flex
+				align-items: center
+				justify-content: center
+				.info
+					font-family: "Rex", sans-serif
+					font-weight: bold
+					padding-left: 34px
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					line-height: 1
+					.item
+						padding-bottom: 22px
+						&:last-child
+							padding-bottom: 0px
+					&__header
+						color: #83624d
+						font-size: 17px
+					&__text
+						color: #ffeadd
+						font-size: 23px
+					&__small
+						color: #ffeadd
+						font-size: 17px
+			.social
+				font-size: 30px
+				color: #ffeadd
+				text-align: center
+				margin-top: 45px
+				a
+					margin: 8px
+					&:hover
+						color: darken(#ffeadd, 15%)
+			.copy
+				color: #ffeadd
+				text-align: center
+				font-size: 15px
+				margin-top: 4px
+				//margin-bottom: 30px
+					

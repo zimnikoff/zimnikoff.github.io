@@ -1,0 +1,77 @@
+.price
+	min-height: 400px
+	background: url("../img/price/bg.jpg")
+	background-size: cover
+	mask: url("../img/mask-bottom.png") repeat-x bottom, 
+	linear-gradient(transparent 5px, black 5px, black calc(100% - 5px), transparent calc(100% - 5px)), 
+	url("../img/mask-top.png") repeat-x top
+	position: relative
+	.list
+		margin: auto
+		width: 520px
+		background: url("../img/price/bg-list.png")
+		color: #39270f
+		margin-top: 70px
+		padding: 0 54px 52px
+		.services
+			width: 100%
+			border-collapse: collapse
+			line-height: 1
+			caption
+				font-family: "Rex" ,sans-serif
+				font-size: 25px
+				margin-top: 58px
+				margin-bottom: 14px
+			tr
+				border-bottom: 1px solid #9b784a
+			td
+				color: #291b0a
+				padding-bottom: 3px
+				padding-top: 18px
+				font-weight: 500
+				&:nth-child(2)
+					text-align: right
+		.register
+			display: block
+			width: 276px
+			height: 62px
+			color: #d0b28b
+			background: #594021
+			font-family: "Rex", sans-serif
+			text-decoration: none
+			font-size: 20px
+			text-align: center
+			margin: auto
+			margin-top: 52px
+			padding: 5px
+			&:hover
+				background: darken(#594021, 2%)
+				text-decoration: underline
+			.box
+				border: 2px solid #d0b28b
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				&::after
+					display: block
+					content: ''
+					width: 21px
+					height: 21px
+					background: url("../img/icons/scissors-light.svg")
+					background-size: cover
+					transform: rotate(180deg)
+					margin: 13px
+				&::before
+					display: block
+					content: ''
+					width: 21px
+					height: 21px
+					background: url("../img/icons/scissors-light.svg")
+					background-size: cover
+					margin: 13px
+
+
+
+
+
